@@ -1,0 +1,33 @@
+{
+  "minify": true,
+  "options": ["html5shiv", "setClasses"],
+  "feature-detects": [
+    "test/canvas",
+    "test/requestanimationframe",
+    "test/svg",
+    "test/touchevents",
+    "test/webanimations",
+    "test/css/animations",
+    "test/css/backdropfilter",
+    "test/css/backgroundposition-xy",
+    "test/css/backgroundsizecover",
+    "test/css/borderradius",
+    "test/css/boxshadow",
+    "test/css/boxsizing",
+    "test/css/calc",
+    "test/css/fontface",
+    "test/css/gradients",
+    "test/css/mediaqueries",
+    "test/css/opacity",
+    "test/css/pointerevents",
+    "test/css/rgba",
+    "test/css/transforms",
+    "test/css/transforms3d",
+    "test/css/transitions",
+    "test/css/vhunit",
+    "test/css/will-change",
+    "test/dom/intersection-observer",
+    "test/forms/placeholder",
+    "test/textarea/maxlength"
+  ]
+}

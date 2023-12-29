@@ -8,5 +8,6 @@
   "parserOptions": {
     "ecmaVersion": 8,
     "sourceType": "module"
-  }
+  },
+  "ignorePatterns": ["src/static/*.js"]
 }

@@ -41,6 +41,7 @@
     "eslint": "^8.52.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-webpack-plugin": "^4.0.1",
+    "html-loader": "^4.2.0",
     "html-webpack-plugin": "^5.6.0",
     "husky": "^8.0.3",
     "image-minimizer-webpack-plugin": "^3.8.3",
@@ -51,6 +52,7 @@
     "imagemin-svgo": "^10.0.1",
     "lint-staged": "^15.0.1",
     "mini-css-extract-plugin": "^2.7.6",
+    "modernizr": "^3.13.0",
     "npm-package-json-lint": "^7.0.0",
     "npm-package-json-lint-config-default": "^6.0.0",
     "postcss": "^8.4.31",
@@ -71,7 +73,8 @@
     "webpack-merge": "^5.10.0"
   },
   "scripts": {
-    "prepare": "husky install",
+    "prepare": "husky install && npm run modernizr",
+    "modernizr": "modernizr -c .modernizrrc.json -d src/static",
     "start": "webpack serve --config webpack/webpack.config.dev.js",
     "build": "cross-env NODE_ENV=production webpack --config webpack/webpack.config.prod.js",
     "analyze": "cross-env NODE_ENV=production webpack --config webpack/webpack.config.prod.js --profile --json=dist/stats.json && webpack-bundle-analyzer dist/stats.json",

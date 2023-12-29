@@ -49,6 +49,17 @@ module.exports = {
           filename: 'fonts/[name][ext][query]',
         },
       },
+      {
+        test: /\.html$/i,
+        loader: 'html-loader',
+      },
+      {
+        test: /modernizr\.js$/i,
+        type: 'asset/resource',
+        generator: {
+          filename: '[name].[contenthash].js',
+        },
+      },
     ],
   },
   plugins: [
